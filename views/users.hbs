@@ -1,0 +1,14 @@
+<h1>Lista de usuarios</h1>
+<ul>
+
+    {{#each lista as | user |}}
+    <section>
+        <div>
+            <h2>{{user.name}}</h2>
+            <span>y tu edad: </span>
+            <p>-- {{user.age}} -- </p>
+        </div>
+    </section>
+    {{/each}}
+
+</ul>

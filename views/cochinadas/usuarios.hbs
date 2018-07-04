@@ -1,0 +1,12 @@
+<h2>Lista de usuarios:</h2>
+
+{{#each users as |u| }}
+
+{{#if u.username}}
+<h3>{{u.username}}</h3>
+<h5>email: {{u.email}}</h5>
+{{else}}
+<h4>Este usuario es anonimus.. D:</h4>
+{{/if}}
+
+{{/each}}
